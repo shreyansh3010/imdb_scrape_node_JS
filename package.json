@@ -1,0 +1,24 @@
+{
+  "name": "imdb_scrape_node_js",
+  "version": "1.0.0",
+  "description": "A node JS scraper for IMDB website for basic details",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreyansh3010/imdb_scrape_node_JS.git"
+  },
+  "keywords": [
+    "IMDB",
+    "node.JS",
+    "scraper"
+  ],
+  "author": "shreyansh3010",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shreyansh3010/imdb_scrape_node_JS/issues"
+  },
+  "homepage": "https://github.com/shreyansh3010/imdb_scrape_node_JS#readme"
+}
