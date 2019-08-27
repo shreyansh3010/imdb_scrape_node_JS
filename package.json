@@ -4,7 +4,8 @@
   "description": "A node JS scraper for IMDB website for basic details",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/shreyansh3010/imdb_scrape_node_JS/issues"
   },
-  "homepage": "https://github.com/shreyansh3010/imdb_scrape_node_JS#readme"
+  "homepage": "https://github.com/shreyansh3010/imdb_scrape_node_JS#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1"
+  }
 }
