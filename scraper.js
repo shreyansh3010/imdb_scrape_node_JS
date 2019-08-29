@@ -34,8 +34,17 @@ module.exports.getMovieDetails = (movieId)=>{
         request(`https://www.imdb.com/title/${movieId}/?ref_=fn_al_tt_1`,(error,response,html)=>{
             if (!error && response.statusCode == 200) {
                 const $ = cheerio.load(html);
+                var articleChildren = $('.subtext').children()
                 var movieDetails = {
-                    rating : $('.ratingValue strong span').text()
+                    title : $('.title_wrapper h1').text(),
+                    year: $('#titleYear a').text(),
+                    rating : $('.ratingValue strong span').text(),
+                    votes : $('.imdbRating a span').text(),
+                    time : $('.subtext time').text().trim(),
+                    poster : $('.poster a img').attr('src'),
+                    release : $(articleChildren[7]).text().trim(),
+                    story : $('.article .canwrap p span').text().trim(),
+                    writtenBy : $('.article .canwrap em a').text()
                 } 
                 resolve(movieDetails);
             }
