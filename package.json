@@ -1,5 +1,5 @@
 {
-  "name": "imdb_scrape",
+  "name": "imdb_scraper",
   "version": "1.0.2",
   "description": "A node JS scraper for IMDB website for basic details",
   "main": "scraper.js",
