@@ -1,4 +1,7 @@
 # imdb-node-scraper
+
+[![NPM](https://img.shields.io/npm/v/imdb-node-scraper.svg)](https://www.npmjs.com/package/imdb-node-scraper)
+
 A node JS scraper for IMDB website for basic details
 
 ## Install
@@ -13,7 +16,7 @@ Getting list of movies by title.
 ```
 const imdb = require('imdb-node-scraper');
 
-imdb.searchMovie('fury') // give the JSON for moive list
+imdb.searchMovie('fury')    // give the JSON arrary of moive list
     .then((result)=>{
         console.log(result);
     })
@@ -38,7 +41,7 @@ Getting details of a paticular movie by imdbID.
 ```
 const imdb = require('imdb-node-scraper');
 
-imdb.getMovieDetails('tt2713180')
+imdb.getMovieDetails('tt2713180')     // give the JSON Object of movie details
     .then((result)=>{
             console.log(result);
         })
@@ -60,6 +63,7 @@ imdb.getMovieDetails('tt2713180')
 ```
 
 # License
+
 [MIT License]
 
 ### Used in https://torrentbazz.herokuapp.com
