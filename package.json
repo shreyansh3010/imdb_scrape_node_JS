@@ -14,7 +14,8 @@
   "keywords": [
     "IMDB",
     "node.JS",
-    "scraper"
+    "scraper",
+    "api"
   ],
   "author": "shreyansh3010",
   "license": "MIT",
@@ -22,9 +23,6 @@
     "url": "https://github.com/shreyansh3010/imdb_scrape_node_JS/issues"
   },
   "homepage": "https://github.com/shreyansh3010/imdb_scrape_node_JS#readme",
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
